@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url("starfield.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Orbitron';
+}
+
+/* Twoje istniejące klasy */
+
+/* Dodaj niestandardową klasę dla group-hover */
+.drop-shadow-custom {
+  filter: drop-shadow(0px 0px 10px red) drop-shadow(0px 0px 20px red);
+  transition: filter 0.3s ease-in-out;
+}
+
+.group:hover .drop-shadow-custom {
+  filter: drop-shadow(0px 0px 20px blue) drop-shadow(0px 0px 40px blue);
+}
+
+/* Inne istniejące klasy */
+.text-shadow-blue {
+  text-shadow: 0px 0px 40px blue;
+}
+.text-shadow-blue:hover {
+    text-shadow: 0px 0px 40px red;
+  }
+
+.text-shadow-red {
+    text-shadow: 
+        0px 0px 10px red,   /* pierwsza warstwa cienia */
+        0px 0px 20px red,   /* druga warstwa cienia */
+        0px 0px 30px red,
+        0px 0px 30px red;
+    transition: all .2s ease-in-out;   /* trzecia warstwa cienia */
+}
+
+.text-shadow-red:hover {
+    text-shadow: 
+        0px 0px 10px blue,   /* pierwsza warstwa cienia */
+        0px 0px 20px blue,   /* druga warstwa cienia */
+        0px 0px 30px blue,
+        0px 0px 30px blue;
+    
+}
+
+.drop-blue {
+    filter: 
+        drop-shadow(0px 0px 10px blue)   /* pierwsza warstwa cienia */
+        drop-shadow(0px 0px 20px blue)    /* druga warstwa cienia */
+        drop-shadow(30px 0px 40px rgba(0, 0, 255, 0.200))    /* druga warstwa cienia */
+}
+
+.drop-red {
+    filter: 
+        drop-shadow(0px 0px 10px red)   /* pierwsza warstwa cienia */
+        drop-shadow(0px 0px 20px red)    /* druga warstwa cienia */
+        drop-shadow(-30px 0px 40px rgba(255, 0, 0, 0.200))    /* druga warstwa cienia */
+}
+
+.drop-blue:hover {
+    filter: 
+        drop-shadow(0px 0px 10px red)
+        drop-shadow(0px 0px 20px red)
+        drop-shadow(30px 0px 40px rgba(255, 0, 0, 0.200))
+}
+
+.drop-red:hover {
+    filter: 
+        drop-shadow(0px 0px 10px blue)
+        drop-shadow(0px 0px 20px blue)
+        drop-shadow(-30px 0px 40px rgba(0, 0, 255, 0.200))
+}
+
+.bg-drop-blue {
+}
+
+.bg-drop-blue:hover {
+    filter: 
+        drop-shadow(0px 0px 10px blue)
+        drop-shadow(0px 0px 20px blue)
+}
+
+.bg-drop-yellow {
+}
+
+.bg-drop-yellow:hover {
+    filter: 
+        drop-shadow(0px 0px 10px rgb(250, 204, 21))
+        drop-shadow(0px 0px 20px rgb(250, 204, 21))
+}
+
+.bg-drop-red {
+}
+
+.bg-drop-red:hover {
+    filter: 
+        drop-shadow(0px 0px 10px red)
+        drop-shadow(0px 0px 20px red)
+        drop-shadow(0px 0px 30px red)
+}
