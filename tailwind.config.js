@@ -28,6 +28,9 @@ export default {
           dark: '#0d0d0d',
         },
       },
+      screens: {
+      'small': {'max': '454px'},
+      },
     },
   },
   plugins: [],

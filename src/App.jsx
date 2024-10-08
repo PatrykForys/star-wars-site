@@ -10,17 +10,15 @@ export default function App() {
   return (
     <Router>
       <div className="min-h-screen text-gray-100">
-        <nav className="p-4">
-          <div className="container mx-auto flex justify-between items-center">
-            <Link to="/" className="text-2xl font-bold drop-blue">
-              Galaktyczna Flota Imperium
-            </Link>
+        <nav className="p-4 relative">
+          <div className="container mx-auto flex items-center justify-center">
             <div className='drop-shadow'>
-            <ul className="flex space-x-4">
-              <li><Link to="/fleet" className="text-shadow-red hover:text-blue-500">Flota</Link></li>
-              <li><Link to="/planets" className="text-shadow-red">Planety</Link></li>
-              <li><Link to="/commanders" className="text-shadow-red">Dowódcy</Link></li>
-            </ul>
+              <ul className="flex mx-auto">
+                <li><Link to="/" className="text-shadow-red hover:text-blue-500 mx-2">Home</Link></li>
+                <li><Link to="/fleet" className="text-shadow-red hover:text-blue-500 mx-2">Flota</Link></li>
+                <li><Link to="/planets" className="text-shadow-red hover:text-blue-500 mx-2">Planety</Link></li>
+                <li><Link to="/commanders" className="text-shadow-red hover:text-blue-500 mx-2">Dowódcy</Link></li>
+              </ul>
             </div>
           </div>
         </nav>
