@@ -11,9 +11,6 @@ body {
     font-family: 'Orbitron';
 }
 
-/* Twoje istniejące klasy */
-
-/* Dodaj niestandardową klasę dla group-hover */
 .drop-shadow-custom {
   filter: drop-shadow(0px 0px 10px red) drop-shadow(0px 0px 20px red);
   transition: filter 0.3s ease-in-out;
@@ -23,7 +20,7 @@ body {
   filter: drop-shadow(0px 0px 20px blue) drop-shadow(0px 0px 40px blue);
 }
 
-/* Inne istniejące klasy */
+
 .text-shadow-blue {
   text-shadow: 0px 0px 40px blue;
 }
@@ -33,17 +30,17 @@ body {
 
 .text-shadow-red {
     text-shadow: 
-        0px 0px 10px red,   /* pierwsza warstwa cienia */
-        0px 0px 20px red,   /* druga warstwa cienia */
+        0px 0px 10px red,   
+        0px 0px 20px red,   
         0px 0px 30px red,
         0px 0px 30px red;
-    transition: all .2s ease-in-out;   /* trzecia warstwa cienia */
+    transition: all .2s ease-in-out;  
 }
 
 .text-shadow-red:hover {
     text-shadow: 
-        0px 0px 10px blue,   /* pierwsza warstwa cienia */
-        0px 0px 20px blue,   /* druga warstwa cienia */
+        0px 0px 10px blue,   
+        0px 0px 20px blue,  
         0px 0px 30px blue,
         0px 0px 30px blue;
     
@@ -51,24 +48,18 @@ body {
 
 .drop-blue {
     filter: 
-        drop-shadow(0px 0px 10px blue)   /* pierwsza warstwa cienia */
-        drop-shadow(0px 0px 20px blue)    /* druga warstwa cienia */
-        drop-shadow(30px 0px 40px rgba(0, 0, 255, 0.200))    /* druga warstwa cienia */
+        drop-shadow(0px 0px 10px blue)   
+        drop-shadow(0px 0px 20px blue)    
+        drop-shadow(30px 0px 40px rgba(0, 0, 255, 0.200))  
 }
 
 .drop-red {
     filter: 
-        drop-shadow(0px 0px 10px red)   /* pierwsza warstwa cienia */
-        drop-shadow(0px 0px 20px red)    /* druga warstwa cienia */
-        drop-shadow(-30px 0px 40px rgba(255, 0, 0, 0.200))    /* druga warstwa cienia */
+        drop-shadow(0px 0px 10px red)  
+        drop-shadow(0px 0px 20px red)   
+        drop-shadow(-30px 0px 40px rgba(255, 0, 0, 0.200))    
 }
 
-.drop-blue:hover {
-    filter: 
-        drop-shadow(0px 0px 10px red)
-        drop-shadow(0px 0px 20px red)
-        drop-shadow(30px 0px 40px rgba(255, 0, 0, 0.200))
-}
 
 .drop-red:hover {
     filter: 

@@ -22,11 +22,11 @@ const commanders = [
 
 export default function Commanders() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 ">
       <h1 className="text-4xl font-bold text-center mb-8 text-yellow-400">Dowódcy Imperium</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         {commanders.map((commander) => (
-          <div key={commander.name} className="bg-black bg-opacity-10 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+          <div key={commander.name} className="bg-black bg-opacity-10 rounded-lg shadow-lg  transition-all duration-300 hover:scale-105">
             <br />
             <br />
             <br />

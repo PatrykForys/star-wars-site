@@ -10,9 +10,8 @@ export default function Home() {
       className="container mx-auto px-4 py-8"
       style={{ fontFamily: "Orbitron, sans-serif" }}
     >
-      <h1 className="text-4xl font-bold text-center mb-12">
-        <span className="drop-blue transition-all duration-300">Witaj w Galaktycznej</span>{" "}
-        <span className="drop-red transition-all duration-300">Flocie Imperium</span>
+      <h1 className="text-4xl font-bold text-center drop-blue mb-12">
+        Witaj w Galaktycznej Flocie Imperium
       </h1>
       <div className="p-6 rounded-lg shadow-lg mb-8 bg-black bg-opacity-10">
         <p className="text-lg mb-4 text-white">

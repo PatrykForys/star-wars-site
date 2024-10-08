@@ -12,7 +12,7 @@ export default function App() {
       <div className="min-h-screen text-gray-100">
         <nav className="p-4">
           <div className="container mx-auto flex justify-between items-center">
-            <Link to="/" className="text-2xl font-bold text-shadow-blue">
+            <Link to="/" className="text-2xl font-bold drop-blue">
               Galaktyczna Flota Imperium
             </Link>
             <div className='drop-shadow'>
